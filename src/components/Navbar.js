@@ -7,8 +7,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/", text: "Főoldal", icon: <HomeIcon className="w-5 h-5 mr-2" /> },
-    { to: "/events", text: "Események", icon: <CalendarDaysIcon className="w-5 h-5 mr-2" /> },
-    { to: "/about", text: "Rólunk", icon: <InformationCircleIcon className="w-5 h-5 mr-2" /> }
+    { to: "/events", text: "Események", icon: <CalendarDaysIcon className="w-5 h-5 mr-2" /> }
   ];
 
   return (
