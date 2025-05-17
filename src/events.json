@@ -1,30 +1,9 @@
 [
   {
-    "title": "Plébániai Családi Nap",
-    "description": "Egész napos programok kicsiknek és nagyoknak a közösségi ház udvarán. Lesznek játékok, kézműves foglalkozások és közös ebéd.",
-    "startDate": "2025-08-10T10:00:00",
-    "endDate": "2025-08-10T18:00:00",
+    "title": "MIK 1. gyűlés",
+    "description": "🔥 Bográcsozás, nyársalás, grillezés a tűz mellett – jó kaja, jó arcok, jó hangulat! 💬🤝 Gyertek ismerkedni, dumálni, lazulni! 🌙✨",
+    "startDate": "2025-06-14T16:00:00",
+    "endDate": "2025-06-14T22:00:00",
     "location": "Közösségi Ház Udvara"
-  },
-  {
-    "title": "Nyári Ifjúsági Tábor",
-    "description": "Egy hetes tábor a Balaton mellett, tele lelki programokkal, sporttal és közösségépítéssel.",
-    "startDate": "2025-07-15",
-    "endDate": "2025-07-22",
-    "location": "Balatonlelle, Ifjúsági Szálló"
-  },
-  {
-    "title": "Adventi Készülődés",
-    "description": "Közös koszorúkészítés és lelki ráhangolódás az adventi időszakra.",
-    "startDate": "2025-11-30T15:00:00",
-    "endDate": "2025-11-30T17:00:00",
-    "location": "Plébánia Nagyterem"
-  },
-  {
-    "title": "Karácsonyi Koncert",
-    "description": "A helyi kórus és zenekar ünnepi koncertje a templomban.",
-    "startDate": "2025-12-20T19:00:00",
-    "endDate": "2025-12-20T20:30:00",
-    "location": "Szent István Templom"
   }
 ]
