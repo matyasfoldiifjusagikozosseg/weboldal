@@ -142,7 +142,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter basename="/website/" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <BrowserRouter basename={process.env.PUBLIC_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="App bg-mik-light-blue min-h-screen flex flex-col">
         <Navbar /> 
         <div className="flex-grow">
