@@ -1,18 +1,10 @@
 [
   {
     "id": "first-parish-meeting-2025",
-    "title": "First Parish Meeting of the Year",
-    "summary": "Discussing upcoming community projects and initiatives.",
+    "title": "1. MIK gyűlés",
+    "summary": "🔥 Bográcsozás, nyársalás, grillezés a tűz mellett – jó kaja, jó arcok, jó hangulat! 💬🤝 Gyertek ismerkedni, dumálni, lazulni! 🌙✨",
     "date": "2025-01-15",
-    "markdownFile": "news/first-parish-meeting-2025.md",
-    "imageUrl": "/news_images/parish-meeting.jpg"
-  },
-  {
-    "id": "youth-group-bake-sale-2025",
-    "title": "Youth Group Bake Sale",
-    "summary": "Raising funds for the summer camp. Come support our youth!",
-    "date": "2025-02-10",
-    "markdownFile": "news/youth-group-bake-sale-2025.md",
-    "imageUrl": "/news_images/bake-sale.jpg"
+    "markdownFile": "news/elso-mik-gyules.md",
+    "imageUrl": "https://m.blog.hu/bl/blogkocsma/image/nyarsalas/12.jpg"
   }
 ]
