@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HomeIcon, CalendarDaysIcon, InformationCircleIcon } from '../utils'; // Import icons
+import { HomeIcon, CalendarDaysIcon} from '../utils'; // Import icons
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
