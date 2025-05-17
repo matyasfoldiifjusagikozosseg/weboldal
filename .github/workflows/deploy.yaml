@@ -1,3 +1,4 @@
+# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -21,6 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -29,29 +31,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Node.js
-        uses: actions/setup-node@v4 # Updated to v4 for consistency
+        uses: actions/setup-node@v4
         with:
           node-version: '18' # Or your preferred Node.js version
-
+          cache: 'npm'
       - name: Install dependencies
-        run: npm install
-
-      - name: Build application
+        run: npm ci
+      - name: Build
         run: npm run build
-        env:
-          PUBLIC_URL: /parish-community-website # Ensure this matches your repository name if deploying to <username>.github.io/<repository-name>
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the build output from the root directory
+          # Upload build directory
           path: './build'
-          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
