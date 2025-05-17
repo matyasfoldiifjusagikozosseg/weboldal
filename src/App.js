@@ -55,7 +55,7 @@ function App() {
                   {item.imageUrl && (
                     <div className="mb-6">
                       <img 
-                        src={process.env.PUBLIC_URL + item.imageUrl} 
+                        src={item.imageUrl} 
                         alt={item.title} 
                         className="w-full h-56 object-cover rounded-md shadow"
                       />
