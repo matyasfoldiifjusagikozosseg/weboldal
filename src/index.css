@@ -1,0 +1,25 @@
+/* filepath: /Users/temleitnerdenes/Codes/MIK Website/parish-community-website/src/index.css */
+:root {
+  --mik-gold: #E6CA00; /* Gold from logo - can be refined */
+  --mik-light-blue: #DDEEFF; /* Light blue from logo */
+  --mik-dark-blue: #0F1633; /* Dark blue from logo text/elements */
+  --mik-black: #000000; /* Black for text and details */
+  --mik-white: #FFFFFF; /* White for backgrounds/text */
+  --mik-light-gray: #f0f2f5; /* Existing light gray background */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mik-light-blue); /* Use CSS variable */
+  color: var(--mik-dark-blue); /* Default text color */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

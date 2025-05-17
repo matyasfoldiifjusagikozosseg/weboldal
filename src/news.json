@@ -1,0 +1,18 @@
+[
+  {
+    "id": "first-parish-meeting-2025",
+    "title": "First Parish Meeting of the Year",
+    "summary": "Discussing upcoming community projects and initiatives.",
+    "date": "2025-01-15",
+    "markdownFile": "news/first-parish-meeting-2025.md",
+    "imageUrl": "/news_images/parish-meeting.jpg"
+  },
+  {
+    "id": "youth-group-bake-sale-2025",
+    "title": "Youth Group Bake Sale",
+    "summary": "Raising funds for the summer camp. Come support our youth!",
+    "date": "2025-02-10",
+    "markdownFile": "news/youth-group-bake-sale-2025.md",
+    "imageUrl": "/news_images/bake-sale.jpg"
+  }
+]

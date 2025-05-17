@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mik-light-blue);; /* Light gray background */
+  color: #010101;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Remove or comment out .App-header styles as they are now handled by Navbar with Tailwind */
+/*
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh; 
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: flex-start; 
+  font-size: calc(8px + 2vmin); 
+  color: white;
+  padding: 10px 20px; 
+}
+
+.App-logo {
+  height: 8vmin; 
+  pointer-events: none;
+  margin-right: 20px;
+}
+*/
+
+/* Tailwind classes will handle layout, so these can be simplified or removed if not needed for other purposes */
+/* For example, if you had specific widths or margins not covered by Tailwind's grid/flex on homepage */
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dceaf7; /* Light blue border for cards */
+  border-radius: 15px; /* Rounded corners for cards */
+  padding: 20px;
+  margin-bottom: 20px; /* Space between cards */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #0f1633; /* Dark blue for card titles */
+  margin-top: 0;
+}
+
+.card p {
+  color: #020202; /* Darker text for readability */
+  line-height: 1.6;
+}
+
+.card small {
+  color: #0f1633;
+  opacity: 0.8;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.event-item button {
+  padding: 12px 20px; /* Larger buttons */
+  background-color: #e6ca00; /* Gold buttons */
+  color: #0f1633; /* Dark blue text on buttons */
+  border: none;
+  border-radius: 25px; /* Fully rounded buttons */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.event-item button:hover {
+  background-color: #feedc7; /* Lighter gold on hover */
+  color: #0f1633;
+  transform: translateY(-2px);
+}
+
+.App-footer {
+  background-color: #0f1633; /* Dark blue footer */
+  color: #dceaf7; /* Light blue text */
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+main {
+  display: flex;
+  flex-direction: row; /* News and events side-by-side on desktop */
+  padding: 20px;
+  gap: 20px; /* Add space between news and events */
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column; /* Stack news and events on mobile */
+  }
+
+  /* Hide news and events sections on the main page for mobile, they are available on their own pages */
+  .App > main > .news-section,
+  .App > main > .events-section {
+    display: none;
+  }
+
+  /* Tailwind handles responsive design, so these specific rules might not be needed or can be adjusted */
+  /* .App-header {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .App-logo {
+    margin-right: 0;
+    margin-bottom: 10px; 
+  } */
+
+  .news-section,
+  .events-section {
+    display: block; /* Or use Tailwind's responsive classes like `md:hidden` directly in JSX */
+    /* width: 100%; */ /* Tailwind's grid/flex system will manage this */
+    /* margin-bottom: 20px; */ /* Tailwind's spacing utilities can handle this */
+  }
+}
+
+/* Card styles can be replaced by Tailwind utility classes directly in the JSX */
+/* .card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+} */
+
+/* Button group styles can be replaced by Tailwind utility classes */
+/* .button-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+} */
